@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watson Assistant & Canva Embed</title>
+</head>
+<body>
+
+  <!-- Canva Embed -->
+  <div style="position: relative; width: 100%; height: 0; padding-top: 56.2225%;
+   padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+   border-radius: 8px; will-change: transform;">
+    <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+      src="https://www.canva.com/design/DAGUX0J7PCY/dkI9AHKRHdxjp3xbV7mcIg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+    </iframe>
+  </div>
+  <a href="https://www.canva.com/design/DAGUX0J7PCY/dkI9AHKRHdxjp3xbV7mcIg/view?utm_content=DAGUX0J7PCY&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">الصفحة الرئيسية</a> بواسطة Turki Alhujili
+
+  <!-- Watson Assistant Embed -->
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "b89cd00f-f9b3-4ff6-9f95-56c656ded249", // The ID of this integration.
+      region: "jp-tok", // The region your integration is hosted in.
+      serviceInstanceID: "cfa306c4-955c-40ee-afa9-093c8666a014", // The ID of your service instance.
+      onLoad: async (instance) => { await instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+
+</body>
+</html>
